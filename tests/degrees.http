@@ -1,0 +1,28 @@
+@base =  http://127.0.0.1:8080/api/v1
+
+GET {{base}}/degrees
+
+############################################################33
+GET {{base}}/degrees/2
+
+################################################
+POST {{base}}/degrees
+Content-Type: application/json
+
+{
+    "name": "Tecnologia del Hardware",
+    "years": "4"
+}
+
+###################################################3
+DELETE {{base}}/degrees/5
+
+################################################
+PUT {{base}}/degrees/3
+Content-Type: application/json
+
+{
+    "degreeId": "3",
+    "name": "Tecnologia del software",
+    "years": "5"
+}

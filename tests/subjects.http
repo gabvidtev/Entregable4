@@ -1,0 +1,63 @@
+@base = http://127.0.0.1:8080/api/v1
+
+POST {{base}}/subjects
+Content-Type: application/json
+
+{
+    "name": "Gestión Orientada a Objetos y Datos",
+    "acronym": "GOOD",
+    "credits": "4.5",
+    "course": "1",
+    "type": "Obligatoria",
+    "degreeId": "1",
+    "departmentId": "1"
+}
+########################
+POST {{base}}/subjects
+Content-Type: application/json
+
+{
+    "name": "Gestión Orientada a Objetos y Datos",
+    "acronym": "BAD",
+    "credits": "4.5",
+    "course": "1",
+    "type": "Obligatoria",
+    "degreeId": "1",
+    "departmentId": "1"
+}
+################################
+
+PUT {{base}}/subjects/7
+Content-Type: application/json
+
+{
+    "name": "Fisica Informatica",
+    "acronym": "FI",
+    "credits": "6",
+    "course": "1",
+    "type": "Obligatoria",
+    "degreeId": "2",
+    "departmentId": "1"
+}
+#####################
+
+PUT {{base}}/subjects/1
+Content-Type: application/json
+
+{
+    "name": "Programacion",
+    "acronym": "98",
+    "credits": "6",
+    "course": "1",
+    "type": "Obligatoria",
+    "degreeId": "2",
+    "departmentId": "1"
+}
+
+################################
+DELETE {{base}}/subjects/3
+#########################
+GET {{base}}/subjects
+
+
+

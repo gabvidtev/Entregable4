@@ -1,0 +1,12 @@
+@base = http://127.0.0.1:8080/api/v1
+POST {{base}}/groups
+Content-Type: application/json
+
+{
+    "groupId": "26",
+    "name": "L6",
+    "activity": "Teoria",
+    "year": "2018",
+    "subject": "1",
+    "classroom": "3"
+}
